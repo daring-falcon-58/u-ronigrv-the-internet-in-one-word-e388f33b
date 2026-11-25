@@ -100,25 +100,58 @@ Final:
   C5: **feral** (5 chars vs 8, lands faster; the comp's tie-break also favours fewer
   bytes). **Feral wins, margin 2.**
 
-## Winner
+## Winner — REVISED after live collision check (see below)
 
-**`feral`** — 5 characters, 5 bytes, UTF-8, single word.
+**`bots`** — 4 characters, 4 bytes, UTF-8, single word.
 
-Why it wins: the internet is a wild animal nobody house-trained — no one is in
-charge, no rules stick, everything runs loose. It makes a reader laugh ("feral" as
-a description of a website is absurd) and then nod (yes — that is exactly what this
-place is). It is true of the whole internet, not one app or mood; it is not the
-first obvious word (cats / memes / porn / doomscrolling are); and at 5 letters it
-lands in one beat, spelled correctly, instantly readable.
+Why it wins: the internet is bots — dead-internet theory made literal: roughly half
+of web traffic is automated, and with the AI content flood of 2026 the claim is
+truer than ever. It makes a reader laugh ("it's all bots" — we're all talking to
+robots) and then nod (yes — that is increasingly what this place is). It is true of
+the whole internet's composition, not one app or mood; it is not the first obvious
+word; and at 4 letters it lands in one beat, spelled correctly, instantly readable —
+and the comp's tie-break favours fewer bytes.
 
-Runner-up: `unhinged` (68/75, lost the final on C2/C4/C5, margin 2).
+Runoff (after the tournament winner was killed by collision — see below): the top
+three surviving words by criteria score were **wrong (61)**, **bots (61)**, **ads (60)**.
+- **bots vs wrong:** C1 — bots edges it (a noun naming what the internet IS, its
+  substance/population, vs an adjective verdict on its correctness). C2 tied. C3 —
+  bots edges it (a composition fact, measurable and whole-internet, vs a discourse
+  quality that overclaims — the internet also holds vast correct information). C4
+  tied. C5 — bots wins (4 chars vs 5). **Bots wins, margin 2.**
+- **bots vs ads:** already decided in QF4 — bots won on C2 (4 vs 3), margin 2.
+- **bots vs wrong** is the closest call in the whole selection; bots wins on three
+  separate small edges (C1, C3, C5), not one coin flip.
 
-## Collision check
+Original tournament winner `feral` (68/75) and runner-up `unhinged` (68/75) are
+both disqualified by collision (below) and cannot be submitted.
 
-- Live titles at build time: **0 entries** on the competition feed — no other
-  entrant's word to collide with.
-- House anchor/rung collision: the 3 fixed house texts are sealed and unknowable;
-  `feral` is an unusual, distinctive pick and very unlikely to be one of the
-  house's calibration texts (which span weak→strong with common, measurable words).
-  The obvious candidates (`cats`, `memes`, `porn`, `doomscrolling`) were eliminated
-  partly for this reason.
+## Collision check — LIVE FIELD (the decisive check)
+
+The scan-time brief said 0 submissions. That was stale: by the time the build was
+finalized the field had exploded to **602 submissions** (first entries 23:17Z, minutes
+after the scan). The live feed was pulled via the make.fun API and every title
+normalized (stripping the "The Internet in One Word: " prefix) before finalizing.
+
+- **`feral`: TAKEN ×47** (sagadaon, aiing-wae, primtzr, escobarsanchez29, …) — plus
+  8 more as "feral — the internet in one word". The crowd's favourite word.
+- **`unhinged`: TAKEN ×14** (crisp-condor-71, brisk-lark-89-5929, araggoorn, …).
+- Also taken: doomscrolling ×25, doomscroll ×33, brainrot ×19, enshittification ×12,
+  procrastination ×10, cookies ×8, yapping ×7, actually ×6, captcha ×6, unpaid ×6,
+  buffering ×6, receipts ×4, groupchat ×4, slop ×2, tabs ×2, lurking ×1, clickbait ×1,
+  repost ×1.
+- **`bots`: FREE — 0 titles** (and `bot` singular also 0). `wrong`: 0. `ads`: 0.
+  `outrage`, `void`, `blursed`, `cringe`, `cursed`, `garbage`, `hottakes`, `screaming`,
+  `drama`, `chaos`, `arguing`, `whatever`, `yikes`, `distraction`: all 0.
+
+Why a taken word cannot win: the rules say entries whose files are byte-identical
+are one member of the field, share one rate, and **the earlier receipt places above
+its copies**. Submitting `feral` would place behind at least 47 earlier copies —
+it cannot take a paid place. Same for `unhinged` (14 earlier copies).
+
+Caveat: 117 entries hide their word behind the generic title "The Internet in One
+Word", so a title check cannot prove a word is unheld — only that no visible entry
+holds it. `bots` is free on every visible signal. The house's 3 fixed anchor/rung
+texts are sealed and unknowable; `bots` is a distinctive pick, far less likely to be
+a house calibration text than the crowd's obvious words (feral, unhinged,
+doomscrolling, brainrot).

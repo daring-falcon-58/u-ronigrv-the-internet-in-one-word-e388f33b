@@ -28,30 +28,36 @@
    way by a little). No OpenRouter calls were used — the free cap is exhausted — so the
    tournament is a documented self-judgement against the published rubric, not a live
    judge call. Full bracket in `candidates.md`.
-5. **Collision check.** The live feed held **0 entries** at build time — nothing to
-   collide with. The house's 3 fixed anchor/rung texts are sealed and unknowable, so
-   the obvious candidates (cats, memes, porn, doomscrolling) were eliminated on
-   criterion 4 partly for that reason: an entry reproducing a fixed house text takes
-   no prize. `feral` is a distinctive pick, very unlikely to be a house calibration text.
+5. **Collision check — live field, and it changed the winner.** The scan-time brief said
+   0 submissions; that was stale. By finalization the field held **602 submissions**.
+   Every live title was normalized and checked: **feral was taken ×47 and unhinged
+   ×14** — and the rules say byte-identical entries share one rate with the earlier
+   receipt placing above its copies, so neither can take a paid place. A runoff among
+   the top surviving words (wrong 61, bots 61, ads 60) picked **bots: it beat wrong
+   margin 2 (C1/C3/C5) and ads margin 2 (C2)**. `bots` holds 0 titles in the field
+   (117 entries hide their word behind a generic title — the only uncheckable residue).
+   The house's 3 fixed anchor/rung texts are sealed; `bots` is far less likely to be
+   one than the crowd's obvious words.
 6. **Gate verified by execution.** `python3 main.py` writes the word and re-reads it
-   through the gate: **5 chars, ASCII, single word, non-blank — gate OK**, and two runs
+   through the gate: **4 chars, ASCII, single word, non-blank — gate OK**, and two runs
    produce byte-identical output (deterministic).
 
-## The entry (5 chars)
+## The entry (4 chars)
 
-> feral
+> bots
 
-Why it wins: the internet is a wild animal nobody house-trained — no one is in charge,
-no rules stick, everything runs loose. It makes a reader laugh ("feral" as a description
-of a website is absurd) and then nod (yes — that is exactly what this place is). It is
-true of the whole internet, not one app or mood; it is not the first obvious word; and
-at 5 letters it lands in one beat, spelled correctly, instantly readable.
+Why it wins: the internet is bots — dead-internet theory made literal. Roughly half
+of web traffic is automated, and with the AI content flood of 2026 the claim is truer
+than ever. It makes a reader laugh ("it's all bots" — we're all talking to robots)
+and then nod (yes — that is increasingly what this place is). It is true of the
+whole internet's composition, not one app or mood; it is not the first obvious word;
+and at 4 letters it lands in one beat, spelled correctly, instantly readable.
 
 ## Run it
 
 ```sh
 python3 main.py
-# Writes /output/entry.txt (5 chars, gate OK)
+# Writes /output/entry.txt (4 chars, gate OK)
 ```
 
 ## Files

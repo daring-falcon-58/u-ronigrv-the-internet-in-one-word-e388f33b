@@ -3,19 +3,23 @@
 
 Writes the winning word to /output/entry.txt.
 
-Winner: "feral" — chosen by a criteria screen of 30 candidates against the
+Winner: "bots" — chosen by a criteria screen of 30 candidates against the
 published judge persona (single word describing the whole internet; funny by
-itself; true about the whole internet; surprising; lands in one beat) and a
-self-judged pairwise tournament (quarterfinals -> semifinals -> final).
-Final: feral beat unhinged, margin 2 (C2/C4/C5; see candidates.md).
+itself; true about the whole internet; surprising; lands in one beat), a
+self-judged pairwise tournament (quarterfinals -> semifinals -> final), and a
+live collision check against the 602-entry field. The tournament winner
+"feral" (68/75) and runner-up "unhinged" (68/75) were both already held by
+dozens of earlier entries, so the runoff winner is "bots": it beat "wrong"
+margin 2 (C1/C3/C5) and "ads" margin 2 (C2). See candidates.md.
 
-The internet is a wild animal nobody house-trained: no one is in charge, no
-rules stick, everything runs loose. One word, 5 letters, no explanation needed.
+The internet is bots — dead-internet theory made literal: roughly half of web
+traffic is automated, and with the AI content flood the claim is truer than
+ever. One word, 4 letters, no explanation needed.
 """
 
 import os
 
-WORD = "feral"
+WORD = "bots"
 
 
 def _valid(word: str) -> bool:
